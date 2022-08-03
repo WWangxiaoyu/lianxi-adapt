@@ -2,28 +2,36 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+        <link href="css/big.css" rel="stylesheet" media="(min-device-width:800px)">
+        <link href="css/small.css" rel="stylesheet" media="(max-device-width:800px)">
         <title>竖版签字</title>
-        <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
-        <link rel="stylesheet" href="./css/index.css">
     </head>
     <body>
-        <!-- 顶部信号 -->
-        <div>
-            
+        <div class="layout">
+            <div class="top"></div>
+            <div class="main">
+                <div class="layout-1">
+                    <a href="#">切换横屏签字</a>
+
+                </div>
+               
+              
+
+            </div>
         </div>
-
-        <!-- 切换横屏 按钮& 调节大小 -->
-        <div></div>     
-
-        <!-- 字体展示区 -->
-        <div>
-            <ul></ul>
-        </div>
-
-        <!-- 书写提示 & 书写区 -->
-        <div></div>
-
-        <!-- 按钮 -->
-        <div></div>
     </body>
+    <script>
+        var c=()=>{
+            // 获取设备的宽度
+            // 根据屏幕大小改变字体大小
+            let w=document.documentElement.clientWidth;
+            let n=(20*(w/320)>40?40+"px":(20*(w/320)+"px"));
+            document.documentElement.style.fontSize=n;
+        }
+        window.addEventListener("load",c);
+        // 在浏览器窗口大小发生变化时触发
+        window.addEventListener("resize",c);
+    </script>
+    
+</html>

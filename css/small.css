@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 10px;
+}
+#layout{
+    display: flex;
+    flex-direction: column;
+}
+.top{
+    position: absolute;
+    top:0;
+    left: 20rem;
+    right: 20rem;
+    height: 5rem; 
+    z-index: 1000;
+    background-color: rgb(113, 200, 241);
+}
+.layout-1 a{
+    top:5rem;
+    margin-left: 250px;
+    padding: 10px 5px; 
+    background-color:rgb(54, 144, 223); 
+    color: white; 
+    text-align: center; 
+    font-size: 4rem; 
+    text-decoration: none; 
+    border-radius: 4px;
+}
+
+.bottom{
+    position: fixed;
+    bottom: 0;
+    left: 20rem;
+    right: 20rem;
+    height: 5rem;
+    z-index: 1000;
+    background-color: rgb(113, 200, 241);
+}
