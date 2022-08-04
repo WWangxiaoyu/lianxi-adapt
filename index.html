@@ -3,19 +3,40 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
-        <link href="css/big.css" rel="stylesheet" media="(min-device-width:800px)">
-        <link href="css/small.css" rel="stylesheet" media="(max-device-width:800px)">
+        <link href="css/big.css" rel="stylesheet" media="(min-device-width:100px)">
+        <link href="css/small.css" rel="stylesheet" media="(max-device-width:100px)">
         <title>竖版签字</title>
     </head>
     <body>
         <div class="layout">
             <div class="top"></div>
             <div class="main">
+                <!-- 切换按钮+调试图片 -->
                 <div class="layout-1">
                     <a href="#">切换横屏签字</a>
-
+                    <img src="image/roll.png">
                 </div>
-               
+
+                <!-- 字体展示区 -->
+                <ul>
+                    <li>
+                        <!-- <span class="example-words">某</span> -->
+                        <!-- <img src="image/编组 2.png" class="bianzu2"> -->
+                        <!-- <img src="image/matter.png" class="matter"> -->
+                        
+                    </li>
+
+                    <li>
+                        <!-- <img src="image/编组 2.png" class="bianzu2">
+                        <img src="image/matter.png" class="matter"> -->
+                        <!-- <span>某</span> -->
+                    </li>
+
+                    <li>
+                        <!-- <img src="image/三角形.png" class="triangle">
+                        <img src="image/matter.png" class="matter"> -->
+                    </li>
+                </ul>
               
 
             </div>
@@ -26,7 +47,7 @@
             // 获取设备的宽度
             // 根据屏幕大小改变字体大小
             let w=document.documentElement.clientWidth;
-            let n=(20*(w/320)>40?40+"px":(20*(w/320)+"px"));
+            let n=10*(w/320)+"px";
             document.documentElement.style.fontSize=n;
         }
         window.addEventListener("load",c);
