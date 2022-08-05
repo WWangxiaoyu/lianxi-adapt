@@ -4,43 +4,57 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
         <link href="css/big.css" rel="stylesheet" media="(min-device-width:100px)">
-        <link href="css/small.css" rel="stylesheet" media="(max-device-width:100px)">
+        <!-- <link href="css/small.css" rel="stylesheet" media="(max-device-width:100px)"> -->
         <title>竖版签字</title>
     </head>
     <body>
-        <div class="layout">
-            <div class="top"></div>
-            <div class="main">
-                <!-- 切换按钮+调试图片 -->
-                <div class="layout-1">
-                    <a href="#">切换横屏签字</a>
-                    <img src="image/roll.png">
-                </div>
+        
+        <div class="top"></div>
 
-                <!-- 字体展示区 -->
-                <ul>
-                    <li>
-                        <!-- <span class="example-words">某</span> -->
-                        <!-- <img src="image/编组 2.png" class="bianzu2"> -->
-                        <!-- <img src="image/matter.png" class="matter"> -->
-                        
-                    </li>
+        <div class="main">
+            <!-- 切换按钮+调试图片 -->
+            <div class="layout-1">
+                <a href="#">切换横屏签字</a>
+                <img src="image/roll.png">
+            </div>
 
-                    <li>
-                        <!-- <img src="image/编组 2.png" class="bianzu2">
-                        <img src="image/matter.png" class="matter"> -->
-                        <!-- <span>某</span> -->
-                    </li>
+            <!-- 字体展示区 -->
+            <ul>
+                <li>
+                    <img src="image/编组 2.png" class="bianzu2">
+                    <span class="example-words">某</span>
+                    <!-- <img src="image/matter.png" class="matter"> -->
+                    
+                </li>
 
-                    <li>
-                        <!-- <img src="image/三角形.png" class="triangle">
-                        <img src="image/matter.png" class="matter"> -->
-                    </li>
-                </ul>
-              
+                <li>
+                    <img src="image/编组 2.png" class="bianzu2">
+                    <span class="example-words">某</span>
+                    <!-- <img src="image/matter.png" class="matter"> -->
+                    
+                </li>
 
+                <li>
+                    <img src="image/三角形.png" class="triangle">
+                    <span class="example-words" style="color:#DFDFDF; margin-top: 0.4rem;">某</span>
+                    <!-- <img src="image/三角形.png" class="triangle"> -->
+                </li>
+            </ul>
+            
+            <!-- 书写提示 & 书写区 -->
+            <div class="layout-2">
+                <span>请书写第三个字“某”</span>
+                <span style="color:#CFCFCF">(该签名仅限本次使用)</span>
+                <img src="image/matter.png">
             </div>
         </div>
+
+        <!-- 底部按钮 -->
+        <div class="bottom">
+            <a href="#">返回</a>
+            <a href="#">确定</a>
+        </div>
+        
     </body>
     <script>
         var c=()=>{

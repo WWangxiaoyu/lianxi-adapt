@@ -6,24 +6,33 @@
 html{
     font-size: 10px;
 }
-.layout{
+/* .layout{
     display: flex;
     flex-direction: column;
     width: 80%;
     margin: 0 auto;
-}
+} */
 .top{
-    width: 100%;
-    flex: 0 0 1.4rem;
-    margin: 0 auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    /* width: 100%; */
+    height: 2rem;
+    /* flex: 0 0 1.4rem; */
+    /* margin: 0 auto; */
     background-color: rgb(87, 174, 228);
     /* height: 50px; */
+    z-index: 1000;
 }
 .main{
-    flex: 0 0 100%;
+    /* flex: 0 0 100%; */
+    margin: 0 20px;
+    /* width: 80%; */
     display: flex;
     flex-direction: column;
-    margin-top: 1.5rem;
+    margin-top: 3rem;
+    margin-bottom: 4rem;
 }
 .layout-1{
     width: 100%;
@@ -50,7 +59,7 @@ html{
     width: 100%;
     height: 5rem;
     /* vertical-align: -webkit-baseline-middle; */
-    z-index: 1000;
+    /* z-index: 1000; */
 }
 .main ul{
     display: flex;
@@ -66,31 +75,81 @@ html{
     /* align-items: center; */
     height: 9rem;
     /* padding-left: 1.3rem; */
-    margin-left: 1.2rem;
+    /* margin-left: 1.2rem; */
     background-image: url('../image/matter.png');
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: 80%;
+    background-position: center center;
 }
-/* .matter{
-    width: 6rem;
-    height: 6rem;
-
-} */
 .bianzu2{
     position: relative;
     width: 1.5rem;
     height: 1.5rem;
-    top: 0.8rem; 
-    left: 5rem;
+    top: 0.5rem; 
+    left: 6.5rem;
     /* z-index: 1000; */
     /* margin-left: 5.2rem; */
+    background-color: transparent;  /* 背景颜色穿透 */
 }
 .triangle{
+    position: relative;
     width: 1.5rem;
     height: 1rem;
-    margin-left: 2.2rem;
-    margin-bottom: 0.5rem;
+    top: -0.3rem; 
+    left: 3.5rem;
+    background-color: transparent;
 }
 .example-words{
-    /* position: relative; */
+    position: relative;
+    font-size: 4rem;
+    margin: 0rem 2.3rem;
+    width: 4rem;
+    background-color: transparent;
+}
+.layout-2{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+.layout-2 span{
+    height: 1.5rem;
+    text-align: center;
+    font-size: 1rem;
+}
+.bottom{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    
+    /* margin: 2rem auto 0rem; */
+    position: fixed;
+    
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(87, 174, 228);
+}
+.bottom a:nth-of-type(1){
+    flex: 1;
+    height: 2rem;
+    /* margin-left: 17rem; */
+    padding: 0.5rem 0.5rem 0 0.5rem;
+    background-color: rgb(87, 174, 228);
+    color: white;
+    text-align: center;
+    font-size: 1rem;
+    text-decoration: none;
+    border-radius: 4px;
+}
+.bottom a:nth-of-type(2){
+    flex: 1;
+    height: 2rem;
+    /* margin-left: 17rem; */
+    padding: 0.5rem 0.5rem 0 0.5rem;
+    background-color: #C9C9C9;
+    color: white;
+    text-align: center;
+    font-size: 1rem;
+    text-decoration: none;
+    border-radius: 4px;
 }
